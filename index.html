@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<<style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');</style>
+</head>
+<body>
+	<form>
+	<header></header>
+	<section>
+		<article class="fondoCalc">
+			<p>
+				<input class="visor" type="text" id="visor" name="visor"/>
+			</p>
+			<p>
+				<input class="botonNro" type="button" value="1" onclick="escribir(1)"/>
+				<input class="botonNro" type="button" value="2" onclick="escribir(2)"/>
+				<input class="botonNro" type="button" value="3" onclick="escribir(3)"/>
+				<input class="botonOp" type="button" value="+" onclick="operacion('suma')"/>
+			</p>
+			<p>
+				<input class="botonNro" type="button" value="4" onclick="escribir(4)"/>
+				<input class="botonNro" type="button" value="5" onclick="escribir(5)"/>
+				<input class="botonNro" type="button" value="6" onclick="escribir(6)"/>
+				<input class="botonOp" type="button" value="-" onclick="operacion('resta')"/>
+
+			</p>
+			<p>
+				<input class="botonNro" type="button" value="7" onclick="escribir(7)"/>
+				<input class="botonNro" type="button" value="8" onclick="escribir(8)"/>
+				<input class="botonNro" type="button" value="9" onclick="escribir(9)"/>
+				<input class="botonOp" type="button" value="*" onclick="operacion('mult')"/>
+			</p>
+			<p>
+				<input class="botonAccion" type="button" value="C" onclick="operacion('borrar')"/>
+				<input class="botonNro" type="button" value="0" onclick="escribir(0)"/>
+				<input class="botonAccion" type="button" value="=" onclick="resultado()"/>
+				<input class="botonOp" type="button" value="/" onclick="operacion('div')"/>
+			</p>
+		</article>
+	</section>
+	<script src="js/myapp.js"></script>
+</body>
+</html>
